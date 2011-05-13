@@ -11,8 +11,8 @@
 # APP_ID = "168684223172954"
 
               # DEVELOPMENT
-APP_NAME = "sutalktest"
-APP_ID = "185866364769116"
+APP_NAME = "sutalk_ismail"
+APP_ID = "209970625700109"
 
 
 

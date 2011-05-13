@@ -2,4 +2,4 @@
 
 SUtalk is a video chat application built on top of the 
 [*Facebook Platform*](http://facebook.com/) 
-by Greg Wientjes and is live at [*SUtalk*](http://apps.facebook.com/sutalks/).
+by rubyonrails3  and is live at [*SUtalk*](http://apps.facebook.com/sutalks/).
