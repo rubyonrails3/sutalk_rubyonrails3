@@ -10,6 +10,7 @@ class ApplicationController < ActionController::Base
   def facebook_login 
     parameters = getParams params
     @fb = Facebook.new parameters 
+    logger.debug @fb.to_yaml
 
     session[:facebook_id] = @fb::facebook_user["id"] if !@fb::facebook_user.nil? 
         
