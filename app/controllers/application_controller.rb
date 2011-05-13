@@ -9,8 +9,8 @@ class ApplicationController < ActionController::Base
   # Login to facebook if user is not already logged in
   def facebook_login 
     parameters = getParams params
+    logger.debug params.to_yaml
     @fb = Facebook.new parameters 
-    logger.debug @fb.to_yaml
 
     session[:facebook_id] = @fb::facebook_user["id"] if !@fb::facebook_user.nil? 
         
