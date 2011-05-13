@@ -11,7 +11,7 @@
 # APP_ID = "168684223172954"
 
               # DEVELOPMENT
-APP_NAME = "sutalk_rubyonrails3"
+APP_NAME = "sutalk_rubyonrails"
 APP_ID = "209970625700109"
 
 

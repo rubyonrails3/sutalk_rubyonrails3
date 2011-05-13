@@ -88,8 +88,8 @@ class Facebook
   # get facebook token
   def getToken(params = {})  
     # dataSignedRequest = decode_facebook_hash(params["signed_request"])
-    dataSignedRequest = getSignedRequest(params["signed_request"])
-    token = dataSignedRequest["oauth_token"]
+    dataSignedRequest = getSignedRequest(params["signed_request"]) 
+    token = dataSignedRequest["oauth_token"] 
   end  
 
   # get signed request

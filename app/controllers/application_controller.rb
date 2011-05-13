@@ -7,9 +7,9 @@ class ApplicationController < ActionController::Base
   protected
 
   # Login to facebook if user is not already logged in
-  def facebook_login
+  def facebook_login 
     parameters = getParams params
-    @fb = Facebook.new parameters
+    @fb = Facebook.new parameters 
 
     session[:facebook_id] = @fb::facebook_user["id"] if !@fb::facebook_user.nil? 
         
