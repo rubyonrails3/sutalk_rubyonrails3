@@ -29,7 +29,7 @@ class User < ActiveRecord::Base
   def self.register fb
     fbUser = fb::facebook_user
 
-    User.create!( :facebook_id => fbUser["id"].to_i, 
+    User.create!( :facebook_id => fbUser["id"],
                   :name => fbUser["name"], 
                   :first_name => fbUser["first_name"], 
                   :last_name => fbUser["last_name"], 
