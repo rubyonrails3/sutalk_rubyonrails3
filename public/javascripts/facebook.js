@@ -53,7 +53,7 @@ function requestInvite( onlineFriends ){
 	FB.ui({	method: 'apprequests', 
 					message: message,
 					title: 'Select Online Friends To SUtalk Video Chat', 
-                                        data: 'sid=' + opentok.session_id
+                                        data: 'sid=' + opentok.session_id,
 					filters: [{name: 'Online Friends', user_ids: onlineFriendsArray}, 'all' ]
 				},
 				function(response) {
