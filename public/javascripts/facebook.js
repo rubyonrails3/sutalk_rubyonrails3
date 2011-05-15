@@ -57,7 +57,6 @@ function requestInvite( onlineFriends ){
 					filters: [{name: 'Online Friends', user_ids: onlineFriendsArray}, 'all' ]
 				},
 				function(response) { 
-                                alert(response.data);
 						feedInvite();	
 				}
 	);
