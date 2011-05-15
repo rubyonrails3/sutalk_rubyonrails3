@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(:version => 20110515143857) do
   end
 
   create_table "users", :force => true do |t|
-    t.integer  "facebook_id"
+    t.string   "facebook_id"
     t.string   "name"
     t.string   "first_name"
     t.string   "last_name"
@@ -51,6 +51,6 @@ ActiveRecord::Schema.define(:version => 20110515143857) do
     t.datetime "updated_at"
   end
 
-  add_index "users", ["facebook_id"], :name => "index_users_on_facebook_id"
+  add_index "users", ["facebook_id"], :name => "index_users_on_facebook_id", :unique => true
 
 end
