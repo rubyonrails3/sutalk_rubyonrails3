@@ -56,7 +56,8 @@ function requestInvite( onlineFriends ){
                                         data: 'sid=' + opentok.session_id,
 					filters: [{name: 'Online Friends', user_ids: onlineFriendsArray}, 'all' ]
 				},
-				function(response) {
+				function(response) { 
+                                alert(response.data);
 						feedInvite();	
 				}
 	);
