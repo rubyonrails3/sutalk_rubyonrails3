@@ -79,7 +79,8 @@ feedInvite = function feedInvite(){
 	     link: fb_api.canvas_page + '?sid=' + opentok.session_id,
 			 picture: 'http://sutalk.heroku.com/images/logo.png',
 	     message: 'Please SUtalk video chat with me at ' +
-	 							fb_api.canvas_page + '?sid=' + opentok.session_id
+	 							fb_api.canvas_page + '?sid=' + opentok.session_id,
+            data: 'sid=' + opentok.session_id
 	   },
 		 function(response) {
 				setCanvasHeight(CANVAS_HEIGHT_LARGE);	
@@ -101,7 +102,8 @@ function inviteSingle(id){
 	FB.ui({	method: 'apprequests', 
 					message: message,
 					title: 'Invite Friend To SUtalk Video Chat', 
-					to: id
+					to: id,
+                                        data: 'sid=' + opentok.session_id
 				},
 				function(response) {
 					setCanvasHeight(CANVAS_HEIGHT_LARGE);
